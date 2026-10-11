@@ -66,7 +66,7 @@ export default function CardManager() {
 
         {/* Summary */}
         <View style={styles.panel}>
-          <Text style={styles.label}>TOTAL BALANCE</Text>
+          <Text style={styles.label}><b>TOTAL BALANCE</b></Text>
           <Text style={styles.bigNumber}>{money(totalBalance)}</Text>
           <Text style={styles.muted}>
             {overallUtil.toFixed(0)}% of {money(totalLimit)} limit · ~{money(totalInterest)} interest / mo
@@ -103,7 +103,7 @@ export default function CardManager() {
           </View>
           <TextInput
             style={styles.input}
-            placeholder="APR % (e.g. 22.9)"
+            placeholder="APR %"
             placeholderTextColor={COLORS.placeholder}
             value={apr}
             onChangeText={setApr}
@@ -117,7 +117,7 @@ export default function CardManager() {
         </Pressable>
 
         {/* Cards */}
-        {cards.length === 0 && <Text style={styles.muted}>No cards yet. Add one above.</Text>}
+        {cards.length === 0 && <Text style={styles.muted}>No cards added</Text>}
 
         {cards.map((card, index) => {
           const util = (card.balance / card.limit) * 100;

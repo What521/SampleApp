@@ -5,7 +5,7 @@ import CardManager from '@/components/CardManager';
 export default function HomeScreen() {
   return (
     <SafeAreaView style={styles.safeArea} edges={['top', 'bottom']}>
-      <CardManager />
+      <CardManager/>
     </SafeAreaView>
   );
 }
