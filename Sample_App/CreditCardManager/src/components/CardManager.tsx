@@ -62,7 +62,7 @@ export default function CardManager() {
     <ScrollView style={styles.scroll} contentContainerStyle={styles.content} keyboardShouldPersistTaps="handled">
       <View style={styles.inner}>
         <Text style={styles.pageTitle}><b>Card Manager</b></Text>
-        <Text style={styles.pageSub}>Manage your credit cards while keeping track of balances and interest.</Text>
+        <Text style={styles.pageSub}>Manage your credit cards and keep track of balances and interest.</Text>
 
         {/* Summary */}
         <View style={styles.panel}>
