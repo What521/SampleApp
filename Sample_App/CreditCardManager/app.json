@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "MiniBucketList",
-    "slug": "MiniBucketList",
+    "name": "CreditCardManager",
+    "slug": "CreditCardManager",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "minibucketlist",
+    "scheme": "creditcardmanager",
     "userInterfaceStyle": "automatic",
     "ios": {
       "icon": "./assets/expo.icon"
