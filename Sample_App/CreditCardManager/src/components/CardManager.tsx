@@ -5,12 +5,12 @@ type Card = { id: string; name: string; balance: number; limit: number; apr: num
 
 const COLORS = {
   background: '#000000',
-  surface: '#1f0d07',  // dark panels
+  surface: '#1f0d07',  
   border: '#34170d',
   inputBg: '#120704',
-  accent: '#ff6a3d',   // highlights
-  button: '#c2410c',   // dark reddish-orange button
-  track: '#3a1a10',    // empty part of progress bars
+  accent: '#ff6a3d',   
+  button: '#c2410c',   
+  track: '#3a1a10',    
   text: '#ffffff',
   textMuted: '#ffffff',
   placeholder: '#9a7466',
@@ -22,7 +22,6 @@ const ACCENTS = ['#ff5722', '#ff7043', '#e53935', '#ffa000', '#d84315'];
 const money = (n: number) =>
   `$${n.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
 
-// green up to 30%, amber up to 60%, red above that
 const utilColor = (u: number) => (u <= 30 ? '#22c55e' : u <= 60 ? '#fbbf24' : '#ff4d4d');
 
 export default function CardManager() {
